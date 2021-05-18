@@ -21,84 +21,64 @@
 }
 
 /* line */
+
+.line {
+   position: absolute;
+   left: 25px;
+   height: 1px;
+   width: 8px;
+}
+
 .line__elem1 {
-  position: absolute;
-  left: 25px;
-  width: 8px;
-  height: 1px;
+  top: 40px;
   background: #000000;
 }
 
 .line__elem2 {
-  position: absolute;
-  top: 1rem;
-  left: 25px;
-  width: 8px;
-  height: 1px;
+  top: 112px;
   background: #000000;
 }
 
 .line__elem3 {
-  position: absolute;
-  top: 152px;
-  left: 25px;
-  width: 8px;
-  height: 1px;
+  top: 184px;
   background: #000000;
 }
 
 .line__elem4 {
-  position: absolute;
-  top: 228px;
-  left: 25px;
-  width: 8px;
-  height: 1px;
+  top: 256px;
   background: #000000;
 }
 
 .line__elem5 {
   position: absolute;
-  left: 25px;
-  top: 290px;
+  top: 330px;
 }
 
-.line__elem1__num {
+.line__elem_num {
   position: absolute;
-  left: -19px;
   top: -7px;
-  font-family: Circe;
+   font-family: Circe;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }
 
-.line__elem2__num {
-  position: absolute;
+.line__elem1_num {
   left: -19px;
-  top: -7px;
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
 }
 
-.line__elem3__num {
-  position: relative;
-  left: -13px;
-  top: -7px;
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+.line__elem2_num {
+  left: -19px; 
+}
+
+.line__elem3_num {
+  left: 2px;
 }
 
 /* element 1 */
 
 .container__elem1 {
-  /* flex: 1 1 auto; */
   margin-left: 48px;
   width: 36px;
   display: flex;
@@ -248,3 +228,69 @@
   order: 6;
   flex: none;
 }
+
+
+.checkbtn {
+  height: 32px;
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 190px;
+  align-items: center;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+  margin: 0 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch .switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch .switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0158BB;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 16px;
+}
+ 
+.switch .switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+ 
+.switch .switch__input:checked + .switch__slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
